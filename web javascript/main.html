@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+
+    <title>Hello, world!</title>
+  </head>
+  <body >
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="col-md-3">
+                <label >Cadastre seu nome</label>
+                <input type="text" id="nome" class="form-control">
+            </div>
+           <div class="col-md-3">
+            <label >Cadastre seu email</label>
+            <input type="email" id="email" class="form-control">
+           </div>
+            <div class="col-md-3">
+                <label >Cadastre seu telefone</label>
+                <input type="number" id="numero" class="form-control">
+            </div>
+            <button class="btn btn-primary" onclick="selecione()">Salvar</button>
+            <button class="btn btn-primary" onclick="atualizarAPI()">Sincronizar</button>
+    
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                      <th scope="col">Nome: </th>
+                      <th scope="col">E-mail: </th>
+                      <th scope="col">Telefone: </th>
+                    </tr>
+                  </thead>
+                  <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
