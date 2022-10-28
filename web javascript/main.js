@@ -11,7 +11,7 @@ function selecione() {
 
     if (pessoas.length < 1) {
         pessoas[0] = pessoa;
-    } else pessoas[pessoa.length] = pessoa;
+    } else pessoas[pessoas.length] = pessoa;
 
     atualizeTabela(getnome.value, getemail.value, gettelefone.value);
 }
